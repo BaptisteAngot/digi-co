@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
+## Requirements
+[Node.js](https://nodejs.org/) <br>
+
 ## How to run the project
 To install the project, enter the following commands <br>
 `$ git clone https://github.com//Druxys/digi-co.git` <br>
