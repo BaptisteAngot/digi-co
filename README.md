@@ -5,7 +5,7 @@
 ## Étape 1 – Installation de GIT et Clone du dépôt
 
 
-    1) Visitez ce site Web : https://gitforwindows.org/ et téléchargez l’installateur GIT pour Windows.
+    1) Visitez ce site Web : <a>https://gitforwindows.org/</a> et téléchargez l’installateur GIT pour Windows.
     
     2) Une fois téléchargé, double-cliquez sur l’exécutable pour lancer l’assistant d’installation. Il suffit de suivre les instructions à l’écran, de continuer à cliquer sur Suivant et enfin Terminer pour terminer l’installation.
    
@@ -17,7 +17,7 @@
     
     4) N’oubliez pas de remplacer Mon Nom et votreemail@votreemail.com par vos propres informations. Toute modification faite ultérieurement sera associée à ces détails.
     
-    5) Vous pouvez désormains cloner le dépôt avec la commande : git clone https://github.com//Druxys/digi-co.git
+    5) Vous pouvez désormais cloner le dépôt avec la commande : git clone https://github.com//Druxys/digi-co.git
             
 
 
