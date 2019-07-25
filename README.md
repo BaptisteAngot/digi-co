@@ -1,5 +1,26 @@
 # DigiCo
 
+## Git
+
+## Étape 1 – Installation de GIT et Clone du dépôt
+
+
+    1) Visitez ce site Web : https://gitforwindows.org/ et téléchargez l’installateur GIT pour Windows.
+    
+    2) Une fois téléchargé, double-cliquez sur l’exécutable pour lancer l’assistant d’installation. Il suffit de suivre les instructions à l’écran, de continuer à cliquer sur Suivant et enfin Terminer pour terminer l’installation.
+   
+    3) Ouvrez une invite de commande. Git a installé son terminal (Git Bash, je vous le conseille)
+    
+        Dans celles-ci, entrez les commandes suivantes: 
+        git config --global user.name "Mon Nom" 
+        git config --global user.email "votreemail@votreemail.com"
+    
+    4) N’oubliez pas de remplacer Mon Nom et votreemail@votreemail.com par vos propres informations. Toute modification faite ultérieurement sera associée à ces détails.
+    
+    5) Vous pouvez désormains cloner le dépôt avec la commande : git clone https://github.com//Druxys/digi-co.git
+            
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
 ## Requirements
