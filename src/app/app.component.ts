@@ -1,30 +1,35 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, NgModule, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
+import {WavesModule, ButtonsModule, IconsModule} from 'angular-bootstrap-md';
+import {BrowserModule} from '@angular/platform-browser';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
+@NgModule({
+    declarations: [],
+    imports: [
+        BrowserModule,
+        FontAwesomeModule,
+        NgbModule,
+        WavesModule,
+        ButtonsModule,
+        IconsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+})
 export class AppComponent implements OnInit {
-    title = 'Digi and Co';
-    myForm: FormGroup;
 
-    constructor(private fb: FormBuilder) {
+
+    constructor() {
     }
 
     ngOnInit() {
-        this.myForm = this.fb.group({
-            nom: ['', Validators.required],
-            email: ['', [Validators.required, Validators.pattern('[a-z0-9.@]*')]],
-            message: ['', [Validators.required, Validators.minLength(15)]]
-        });
     }
 
-    onSubmit(form: FormGroup) {
-        console.log('Valide ?', form.valid);
-        console.log('Nom', form.value.name);
-        console.log('Email', form.value.email);
-        console.log('Message', form.value.message);
-    }
 }
