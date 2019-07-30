@@ -1,0 +1,84 @@
+.formu {
+
+  width: 80%;
+  padding: 30px;
+  background: #FFFFFF;
+  margin: 50px auto;
+  border: 1px solid grey;
+
+}
+.formu h2 {
+  background: black;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.formu input[type="text"],
+.formu input[type="date"],
+.formu input[type="datetime"],
+.formu input[type="mail"],
+.formu input[type="number"],
+.formu input[type="tel"],
+.formu input[type="search"],
+.formu input[type="time"],
+.formu input[type="url"],
+.formu input[type="password"],
+.formu textarea,
+.formu select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+
+  height: 45px;
+}
+
+.formu textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+
+.formu input[type="button"],
+.formu input[type="submit"] {
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid #1a1a1a;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+
+
+.formu input[type="button"]:hover,
+.formu input[type="submit"]:hover {
+
+  background-color: white !important;;
+  border: 1px solid #1a1a1a !important;
+  color: #1a1a1a !important;
+}
+
+.formu input[type="button"]:hover,
+.formu input[type="reset"]:hover {
+  background-color: white;
+  border: 1px solid #1a1a1a !important;
+  color: #1a1a1a;
+}
