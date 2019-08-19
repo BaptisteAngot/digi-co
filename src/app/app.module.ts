@@ -12,13 +12,16 @@ import {
   ModalModule,
   WavesModule
 } from 'angular-bootstrap-md';
-import { FcontactComponent } from './fcontact/fcontact.component';
+import {FcontactComponent} from './fcontact/fcontact.component';
+import {ArticleComponent} from './article/article.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    FcontactComponent
+    FcontactComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { FcontactComponent } from './fcontact/fcontact.component';
     WavesModule,
     ModalModule,
     IconsModule,
-    InputUtilitiesModule
+    InputUtilitiesModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

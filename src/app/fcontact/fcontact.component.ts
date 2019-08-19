@@ -9,6 +9,7 @@ import {FormGroup, FormBuilder, ReactiveFormsModule, Validators} from '@angular/
 })
 export class FcontactComponent implements OnInit {
   contactForm: FormGroup;
+
   constructor() {
   }
 
