@@ -7,6 +7,8 @@
 }
 
 .formu h2 {
+  background-color: #0275d8;
+  color: white;
   font-size: 18px;
   padding: 20px;
   margin: -30px -30px 30px -30px;
@@ -52,9 +54,9 @@
 .formu input[type="button"],
 .formu input[type="submit"] {
   text-align: center;
-  background-color: #1a1a1a;
+  background-color: #0275d8;
   border-radius: 8px 8px 8px 8px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #0275d8;
   display: inline-block;
   cursor: pointer;
   color: #FFF;
@@ -70,14 +72,14 @@
 .formu input[type="submit"]:hover {
 
   background-color: white !important;;
-  border: 1px solid #1a1a1a !important;
+  border: 1px solid white !important;
   color: #1a1a1a !important;
 }
 
 .formu input[type="button"]:hover,
 .formu input[type="reset"]:hover {
   background-color: white;
-  border: 1px solid #1a1a1a !important;
+  border: 1px solid white !important;
   color: #1a1a1a;
 }
 
