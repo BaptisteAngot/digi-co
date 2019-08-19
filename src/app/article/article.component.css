@@ -6,6 +6,8 @@ h1, h2, .partage {
 
 h1, h2 {
   font-size: 2.2em;
+  background-color: #0275d8 ;
+  color: white;
 }
 
 img {
