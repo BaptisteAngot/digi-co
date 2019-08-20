@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  arpath: string;
+  constructor() {
+    this.arpath = '/assets/img/icone/thin-arrowheads-pointing-down.svg';
+  }
 
   ngOnInit() {
   }
