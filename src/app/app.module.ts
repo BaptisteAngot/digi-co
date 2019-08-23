@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 
