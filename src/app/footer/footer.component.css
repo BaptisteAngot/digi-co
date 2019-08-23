@@ -2,6 +2,12 @@
   text-align: center;
   width: 100%;
 }
+
 fa-icon {
   padding: 5px;
+}
+
+#lien_contact {
+  text-decoration: none;
+  color: white;
 }
