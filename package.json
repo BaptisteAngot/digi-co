@@ -23,7 +23,7 @@
     "@angular/router": "~8.1.1",
     "@fortawesome/fontawesome-free": "^5.10.0",
     "@types/chart.js": "^2.7.56",
-    "angular-bootstrap-md": "^8.1.0",
+    "angular-bootstrap-md": "^8.0.0",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.5.0",
@@ -35,8 +35,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@ng-bootstrap/ng-bootstrap": "^5.1.0",
-    "angular-bootstrap-md": "^8.0.0",
-    "bootstrap": "^4.3.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"

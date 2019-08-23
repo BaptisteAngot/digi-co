@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {FooterComponent} from './footer/footer.component';
-// tslint:disable-next-line:max-line-length
 import {
   ButtonsModule,
   CheckboxModule,
@@ -19,11 +18,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 
@@ -38,8 +34,9 @@ const appRoutes: Routes = [
     FooterComponent,
     FcontactComponent,
     ArticleComponent,
-    ArticledeuxComponent
+    ArticledeuxComponent,
     HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +50,7 @@ const appRoutes: Routes = [
     InputUtilitiesModule,
     FontAwesomeModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
