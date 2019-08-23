@@ -1,0 +1,24 @@
+<form [formGroup]="contactForm" class="formu text-center">
+  <h2>Contactez-nous !</h2>
+  <label for="mail"></label>
+  <input type="mail" id="mail" placeholder="Email">
+  <label for="tel"></label>
+  <input type="tel" id="tel"
+         pattern="[0-9]{10}"
+         required placeholder="Téléphone">
+  <label for="sujet"></label>
+  <select id="sujet">
+    <option value="" disabled>Choisissez un sujet</option>
+    <option value="1">Lorem</option>
+    <option value="2">Ipsum</option>
+    <option value="2">Lorsum</option>
+    <option value="3">Suremlor</option>
+  </select>
+  <label for="message"></label>
+  <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+  <mdb-checkbox [checked]="false" [default]="true" class="rtext">En soumettant ce formulaire, j'accepte que les informations saisies
+    soient exploitées dans le cadre de
+    la demande de contact et de la relation commerciale qui peut en découler.
+  </mdb-checkbox>
+  <input type="submit" value="Envoyer">
+</form>
