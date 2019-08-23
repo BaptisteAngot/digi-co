@@ -19,6 +19,18 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+
+
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+];
 
 @NgModule({
   declarations: [
@@ -27,6 +39,7 @@ import {MatButtonModule} from '@angular/material';
     FcontactComponent,
     ArticleComponent,
     ArticledeuxComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +54,11 @@ import {MatButtonModule} from '@angular/material';
     FontAwesomeModule,
     MatDialogModule,
     MatButtonModule
+    MDBBootstrapModule.forRoot(),
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,31 @@
+.banniere {
+  background-color: #1a74d5;
+  color: #ffffff;
+}
+.titre
+{
+  width: 100%;
+  margin-top: 10em;
+  margin-bottom: 5em;
+  font-family: "Arial Black";
+  font-weight: bold;
+  /*background-color: crimson;*/
+}
+
+.actus
+{
+  font-size: 2em;
+  font-family: "Arial Black";
+  color: #7cbbda;
+}
+
+.arrow-navigate {
+  width: 15%;
+}
+/*@media only screen and (max-width: 320px) {*/
+/*  h2 {*/
+/*    font-size: 5em;*/
+/*  }*/
+/*}*/
+
+
