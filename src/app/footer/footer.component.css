@@ -3,13 +3,11 @@
   width: 100%;
 }
 
-.img-footer img {
-  width: 13.5%;
-  margin: 20px 20px 20px 20px;
-  transition: 0.2s;
+fa-icon {
+  padding: 5px;
 }
 
-.img-footer a:hover img:hover {
-  width: 17%;
-  transition: 0.3s;
+#lien_contact {
+  text-decoration: none;
+  color: white;
 }
