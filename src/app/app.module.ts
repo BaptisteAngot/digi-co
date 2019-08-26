@@ -22,6 +22,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { TypingAnimationDirective } from 'angular-typing-animation';
+import { NgwWowModule } from 'ngx-wow';
 
 
 const appRoutes: Routes = [
@@ -36,7 +38,8 @@ const appRoutes: Routes = [
     ArticleComponent,
     ArticledeuxComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    TypingAnimationDirective
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     MatDialogModule,
     MatButtonModule,
+    NgwWowModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,

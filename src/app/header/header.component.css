@@ -8,3 +8,8 @@ color-titre
 .color-button{
   background-image: url('/src/assets/img/icone/arrow-down-sign-to-navigate.svg') !important;
 }
+
+img {
+  width: 156px;
+  height: 40px;
+}

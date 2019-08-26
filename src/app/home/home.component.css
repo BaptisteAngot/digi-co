@@ -1,6 +1,7 @@
 .banniere {
   background-color: #1a74d5;
   color: #ffffff;
+  font-family: "Arial Black", sans-serif;
 }
 .titre
 {
@@ -30,14 +31,53 @@ h3, p
   font-family: "Arial Black", sans-serif;
 }
 
-p
-{
-  color: #7cbbda;
+
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
+
+.clear {
+  clear:both;
 }
 /*@media only screen and (max-width: 320px) {*/
 /*  h2 {*/
 /*    font-size: 5em;*/
 /*  }*/
 /*}*/
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.wow {
+  visibility: hidden;
+}
 
 
