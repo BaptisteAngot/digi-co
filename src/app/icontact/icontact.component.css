@@ -1,0 +1,38 @@
+body {
+  font-family: "Arial Black", sans-serif;
+}
+img {
+  width: auto;
+  margin-right: 0;
+  margin-left: 0;
+}
+li {
+  font-size: 1.5em;
+}
+h3 {
+  font-weight: bolder;
+  font-size: 3em;
+  padding-top: 15px;
+}
+
+#gras {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+a#mail::after {
+  content: '';
+  height: 65%;
+  position: absolute;
+  bottom: -10%;
+  left: 10%;
+  right: -5%;
+  background: lightblue;
+  z-index: -2;
+}
+
