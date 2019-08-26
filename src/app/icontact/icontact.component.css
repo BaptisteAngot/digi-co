@@ -124,3 +124,26 @@ a#mail::after {
 .rtext {
   font-size: 12px;
 }
+
+.titre
+{
+  width: 100%;
+  margin-top: 10em;
+  margin-bottom: 5em;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+}
+
+/*.wow {*/
+/*  visibility: hidden;*/
+/*}*/
+
+.img-dot{
+  width: 20px;
+  height: 20px;
+}
+
+.img-idea{
+  width: 150px;
+  height: 150px;
+}
