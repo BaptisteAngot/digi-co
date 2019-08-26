@@ -2,7 +2,14 @@
   background-color: #1a74d5;
   color: #ffffff;
   font-family: "Arial Black", sans-serif;
+  height: 200px;
 }
+
+.typing
+{
+  margin-bottom: 50px;
+}
+
 .titre
 {
   width: 100%;
@@ -80,4 +87,16 @@ h3, p
   visibility: hidden;
 }
 
+.img-dot{
+  width: 20px;
+  height: 20px;
+}
+
+.plus {
+  color: #3ba6e6;
+}
+
+.titre-artcile{
+  color: #2576da;
+}
 
