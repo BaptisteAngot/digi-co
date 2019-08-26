@@ -12,34 +12,26 @@ import {
   ModalModule,
   WavesModule
 } from 'angular-bootstrap-md';
-import {FcontactComponent} from './fcontact/fcontact.component';
-import {ArticleComponent} from './article/article.component';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { TypingAnimationDirective } from 'angular-typing-animation';
 import { NgwWowModule } from 'ngx-wow';
 
 
-const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-];
-
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    FcontactComponent,
-    ArticleComponent,
     ArticledeuxComponent,
     HeaderComponent,
-    HomeComponent,
-    TypingAnimationDirective
+    TypingAnimationDirective,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -54,12 +46,9 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     MatDialogModule,
     MatButtonModule,
+    AppRoutingModule,
     NgwWowModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
   ],
   providers: [],
   bootstrap: [AppComponent]
