@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {ArticleComponent} from './article/article.component';
-import {IcontactComponent} from "./icontact/icontact.component";
+import {IcontactComponent} from './icontact/icontact.component';
+import {WipComponent} from './wip/wip.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'accueil', component: HomeComponent },
   { path: 'contact', component: IcontactComponent },
   { path: 'article', component: ArticleComponent },
+  { path: 'wip', component: WipComponent },
 ];
 
 @NgModule({
