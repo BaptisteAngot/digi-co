@@ -5,9 +5,15 @@
 
 fa-icon {
   padding: 5px;
+  color: #1a74d5;
 }
 
 #lien_contact {
   text-decoration: none;
   color: white;
 }
+
+/*footer {*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*}*/
