@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'accueil', component: HomeComponent },
   { path: 'contact', component: IcontactComponent },
   { path: 'article', component: ArticleComponent },
+  { path: 'video', component: ArticleComponent },
   { path: 'wip', component: WipComponent },
 ];
 
@@ -20,4 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent]
+export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, WipComponent]
