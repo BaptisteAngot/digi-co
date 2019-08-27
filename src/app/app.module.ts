@@ -22,6 +22,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HeaderComponent } from './header/header.component';
 import { TypingAnimationDirective } from 'angular-typing-animation';
 import { NgwWowModule } from 'ngx-wow';
+import { WipComponent } from './wip/wip.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { NgwWowModule } from 'ngx-wow';
     ArticledeuxComponent,
     HeaderComponent,
     TypingAnimationDirective,
-    routingComponents
+    routingComponents,
+    WipComponent
   ],
   imports: [
     BrowserModule,
