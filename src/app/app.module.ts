@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {FooterComponent} from './footer/footer.component';
+import {FcontactComponent} from './fcontact/fcontact.component';
 import {
   ButtonsModule,
   CheckboxModule,
@@ -12,28 +13,31 @@ import {
   ModalModule,
   WavesModule
 } from 'angular-bootstrap-md';
-import { AppRoutingModule, routingComponents } from './app-routing.module';
+import {AppRoutingModule, routingComponents} from './app-routing.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
-import { RouterModule, Routes } from '@angular/router';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { HeaderComponent } from './header/header.component';
-import { TypingAnimationDirective } from 'angular-typing-animation';
-import { NgwWowModule } from 'ngx-wow';
-import { WipComponent } from './wip/wip.component';
-
+import {RouterModule, Routes} from '@angular/router';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import {HeaderComponent} from './header/header.component';
+import {TypingAnimationDirective} from 'angular-typing-animation';
+import {NgwWowModule} from 'ngx-wow';
+import {WipComponent} from './wip/wip.component';
+import {FormsModule} from '@angular/forms';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
+    FcontactComponent,
     ArticledeuxComponent,
     HeaderComponent,
-    TypingAnimationDirective,
+  //  TypingAnimationDirective,
     routingComponents,
-    WipComponent
+    WipComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -51,9 +55,11 @@ import { WipComponent } from './wip/wip.component';
     AppRoutingModule,
     NgwWowModule,
     MDBBootstrapModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }

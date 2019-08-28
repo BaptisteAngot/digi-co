@@ -4,8 +4,9 @@ import {HomeComponent} from './home/home.component';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {ArticleComponent} from './article/article.component';
 import {IcontactComponent} from './icontact/icontact.component';
-import {ArticledeuxComponent} from "./articledeux/articledeux.component";
-import {WipComponent} from "./wip/wip.component";
+import {ArticledeuxComponent} from './articledeux/articledeux.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {WipComponent} from './wip/wip.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'article', component: ArticleComponent},
   {path: 'articleVideo', component: ArticledeuxComponent},
   {path: 'wip', component: WipComponent},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({

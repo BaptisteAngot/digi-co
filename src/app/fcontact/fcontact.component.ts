@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {FormGroup, FormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
+import {Component, OnInit, NgModule} from '@angular/core';
+import {FormGroup, FormBuilder, ReactiveFormsModule, Validators, NgForm} from '@angular/forms';
 
 
 @Component({
@@ -8,7 +8,6 @@ import {FormGroup, FormBuilder, ReactiveFormsModule, Validators} from '@angular/
   styleUrls: ['./fcontact.component.css']
 })
 export class FcontactComponent implements OnInit {
-  contactForm: FormGroup;
 
   constructor() {
   }
