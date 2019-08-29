@@ -1,7 +1,12 @@
+* {
+  font-weight: bolder;
+}
+
 .banniere {
   background-color: #1a74d5;
   color: #ffffff;
   font-family: "Arial Black", sans-serif;
+
   height: 200px;
 }
 
