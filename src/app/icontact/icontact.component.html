@@ -1,7 +1,7 @@
 <div class="animated fadeIn">
 
   <div class="text-center">
-    <div class="  titre">
+    <div class="titre">
       <div class="titre">
         <img class="img-idea wow rotateInUpRight delay-1s" src="./assets/img/on_se_capte.png" alt="on se capte?"/>
         <img class="img-idea wow rotateInUpLeft delay-2s" src="./assets/img/une_idee.png" alt="une idée?"/>
@@ -10,31 +10,46 @@
       </div>
     </div>
   </div>
-  <form class="formu text-center">
-    <h2>On s'occupe de vous</h2>
-    <label for="prenom"></label>
-    <input type="text" id="prenom" placeholder="Prénom">
-    <label for="nom"></label>
-    <input type="text" id="nom" placeholder="Nom">
-    <label for="email"></label>
-    <input type="mail" id="email" placeholder="Email">
-    <label for="societe"></label>
-    <input type="text" name="societe" id="societe" placeholder="Société">
-    <label for="sujet"></label>
-    <select id="sujet">
-      <option value="" disabled>Choisissez un sujet</option>
-      <option value="1">Lorem</option>
-      <option value="2">Ipsum</option>
-      <option value="2">Lorsum</option>
-      <option value="3">Suremlor</option>
-    </select>
-    <label for="message"></label>
-    <textarea id="message" cols="30" rows="10" placeholder="Vos projets, vos idées, ..."></textarea>
-    <mdb-checkbox [checked]="false" [default]="true" class="rtext">En soumettant ce formulaire, j'accepte que les
-      informations saisies
-      soient exploitées dans le cadre de
-      la demande de contact et de la relation commerciale qui peut en découler.
-    </mdb-checkbox>
-    <input type="submit" value="Envoyer">
-  </form>
+  <!-- <form class="formu text-center">
+     <h2>On s'occupe de vous</h2>
+     <label for="prenom"></label>
+     <input type="text" id="prenom" placeholder="Prénom">
+     <label for="nom"></label>
+     <input type="text" id="nom" placeholder="Nom">
+     <label for="email"></label>
+     <input type="mail" id="email" placeholder="Email">
+     <label for="societe"></label>
+     <input type="text" name="societe" id="societe" placeholder="Société">
+     <label for="sujet"></label>
+     <select id="sujet">
+       <option value="" disabled>Choisissez un sujet</option>
+       <option value="1">Lorem</option>
+       <option value="2">Ipsum</option>
+       <option value="2">Lorsum</option>
+       <option value="3">Suremlor</option>
+     </select>
+     <label for="message"></label>
+     <textarea id="message" cols="30" rows="10" placeholder="Vos projets, vos idées, ..."></textarea>
+     <mdb-checkbox [checked]="false" [default]="true" class="rtext">En soumettant ce formulaire, j'accepte que les
+       informations saisies
+       soient exploitées dans le cadre de
+       la demande de contact et de la relation commerciale qui peut en découler.
+     </mdb-checkbox>
+     <input type="submit" value="Envoyer">
+   </form>-->
+</div>
+<div class="container">
+  <div class="row">
+    <div class="pb-md-5"><img class="img-fluid" [src]="contactpath" alt="rouen">
+      <ul style="list-style: none; margin-top: 5px;">
+        <li class="js-anim active">
+        <li id="rouen" class=""><h3>ROUEN</h3></li>
+        <li class="">47 Rue des halettes</li>
+        <li class="">76000 ROUEN</li>
+        <li id="gras">Franck GADRON</li>
+        <li class=""><a href="tel:+33680929292">+336 80 92 92 92</a></li>
+        <li class=""><a id="mail" href="mailto:contact@digiandco.com">contact@digiandco.com</a></li>
+      </ul>
+    </div>
+  </div>
 </div>

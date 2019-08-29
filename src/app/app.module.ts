@@ -18,15 +18,17 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
-import { RouterModule, Routes } from '@angular/router';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { HeaderComponent } from './header/header.component';
+import {RouterModule, Routes} from '@angular/router';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import {HeaderComponent} from './header/header.component';
 // import { TypingAnimationDirective } from 'angular-typing-animation';
-import {TypingAnimationDirective} from 'angular-typing-animation';
+import {TypingAnimationDirective, TypingAnimationModule} from 'angular-typing-animation';
 import {NgwWowModule} from 'ngx-wow';
 import {WipComponent} from './wip/wip.component';
 import {FormsModule} from '@angular/forms';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -56,9 +58,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppRoutingModule,
     NgwWowModule,
     MDBBootstrapModule.forRoot(),
-    FormsModule
+    FormsModule,
+    TypingAnimationModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 
