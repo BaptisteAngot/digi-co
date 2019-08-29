@@ -20,7 +20,7 @@ import {MatButtonModule} from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HeaderComponent } from './header/header.component';
-import { TypingAnimationDirective } from 'angular-typing-animation';
+// import { TypingAnimationDirective } from 'angular-typing-animation';
 import { NgwWowModule } from 'ngx-wow';
 import { WipComponent } from './wip/wip.component';
 
@@ -31,7 +31,7 @@ import { WipComponent } from './wip/wip.component';
     FooterComponent,
     ArticledeuxComponent,
     HeaderComponent,
-    TypingAnimationDirective,
+    // TypingAnimationDirective,
     routingComponents,
     WipComponent
   ],
