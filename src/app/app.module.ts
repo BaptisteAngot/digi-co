@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {FooterComponent} from './footer/footer.component';
-import {FcontactComponent} from './fcontact/fcontact.component';
 import {
   ButtonsModule,
   CheckboxModule,
@@ -32,7 +31,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   declarations: [
     AppComponent,
     FooterComponent,
-    FcontactComponent,
     ArticledeuxComponent,
     HeaderComponent,
     // TypingAnimationDirective,
