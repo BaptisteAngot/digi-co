@@ -14,7 +14,6 @@ import {
 } from 'angular-bootstrap-md';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
@@ -32,13 +31,11 @@ import {SigninComponent} from './auth/signin/signin.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthGuardService} from './services/auth-guard.service';
 import {AuthService} from './services/auth.service';
-import { ArticleclientComponent } from './articleclient/articleclient.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    ArticledeuxComponent,
     HeaderComponent,
     // TypingAnimationDirective,
     routingComponents,
@@ -46,7 +43,6 @@ import { ArticleclientComponent } from './articleclient/articleclient.component'
     PageNotFoundComponent,
     SignupComponent,
     SigninComponent,
-    ArticleclientComponent
   ],
   imports: [
     BrowserModule,

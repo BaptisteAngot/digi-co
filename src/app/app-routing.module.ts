@@ -6,6 +6,7 @@ import {IcontactComponent} from './icontact/icontact.component';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {WipComponent} from './wip/wip.component';
+import {FcrRouenComponent} from './fcr-rouen/fcr-rouen.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'article', component: ArticleComponent},
   {path: 'articleVideo', component: ArticledeuxComponent},
   {path: 'wip', component: WipComponent},
-  {path: '**', component: PageNotFoundComponent}
+  {path: '**', component: PageNotFoundComponent},
+  {path: 'fcr-rouen', component: FcrRouenComponent}
 ];
 
 @NgModule({
@@ -25,4 +27,5 @@ const routes: Routes = [
 export class AppRoutingModule {
 }
 
-export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, ArticledeuxComponent, WipComponent];
+export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, ArticledeuxComponent,
+  WipComponent, PageNotFoundComponent, FcrRouenComponent];
