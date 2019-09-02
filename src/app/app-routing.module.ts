@@ -16,8 +16,8 @@ const routes: Routes = [
   {path: 'article', component: ArticleComponent},
   {path: 'articleVideo', component: ArticledeuxComponent},
   {path: 'wip', component: WipComponent},
+  {path: 'partenaires/fcr-rouen', component: FcrRouenComponent},
   {path: '**', component: PageNotFoundComponent},
-  {path: 'partenaires/fcr-rouen', component: FcrRouenComponent}
 ];
 
 @NgModule({

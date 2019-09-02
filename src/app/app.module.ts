@@ -31,6 +31,12 @@ import {SigninComponent} from './auth/signin/signin.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthGuardService} from './services/auth-guard.service';
 import {AuthService} from './services/auth.service';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { RnRugbyComponent } from './partenaires/rn-rugby/rn-rugby.component';
+import { MasselinComponent } from './partenaires/masselin/masselin.component';
+import { AltitudeComponent } from './partenaires/altitude/altitude.component';
+import { CreditMutuelComponent } from './partenaires/credit-mutuel/credit-mutuel.component';
+import { NovicksComponent } from './partenaires/novicks/novicks.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +49,11 @@ import {AuthService} from './services/auth.service';
     PageNotFoundComponent,
     SignupComponent,
     SigninComponent,
+    RnRugbyComponent,
+    MasselinComponent,
+    AltitudeComponent,
+    CreditMutuelComponent,
+    NovicksComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +73,8 @@ import {AuthService} from './services/auth.service';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     TypingAnimationModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, AuthService, AuthGuardService],
   bootstrap: [AppComponent]
