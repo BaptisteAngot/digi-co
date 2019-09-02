@@ -6,7 +6,7 @@ import {IcontactComponent} from './icontact/icontact.component';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {WipComponent} from './wip/wip.component';
-import {FcrRouenComponent} from './fcr-rouen/fcr-rouen.component';
+import {FcrRouenComponent} from './partenaires/fcr-rouen/fcr-rouen.component';
 
 
 const routes: Routes = [
@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: 'articleVideo', component: ArticledeuxComponent},
   {path: 'wip', component: WipComponent},
   {path: '**', component: PageNotFoundComponent},
-  {path: 'fcr-rouen', component: FcrRouenComponent}
+  {path: 'partenaires/fcr-rouen', component: FcrRouenComponent}
 ];
 
 @NgModule({
