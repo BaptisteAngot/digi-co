@@ -14,7 +14,6 @@ import {
 } from 'angular-bootstrap-md';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
@@ -32,21 +31,17 @@ import {SigninComponent} from './auth/signin/signin.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthGuardService} from './services/auth-guard.service';
 import {AuthService} from './services/auth.service';
-import { ArticleclientComponent } from './articleclient/articleclient.component';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    ArticledeuxComponent,
     HeaderComponent,
     // TypingAnimationDirective,
-    routingComponents,
-    WipComponent,
-    PageNotFoundComponent,
     SignupComponent,
     SigninComponent,
-    ArticleclientComponent
+    routingComponents,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +61,8 @@ import { ArticleclientComponent } from './articleclient/articleclient.component'
     MDBBootstrapModule.forRoot(),
     FormsModule,
     TypingAnimationModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, AuthService, AuthGuardService],
   bootstrap: [AppComponent]
