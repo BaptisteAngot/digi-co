@@ -6,6 +6,7 @@ import {IcontactComponent} from './icontact/icontact.component';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {WipComponent} from './wip/wip.component';
+import {ArticleclientComponent} from './articleclient/articleclient.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'contact', component: IcontactComponent},
   {path: 'article', component: ArticleComponent},
   {path: 'articleVideo', component: ArticledeuxComponent},
+  {path: 'pagetype', component: ArticleclientComponent},
   {path: 'wip', component: WipComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
