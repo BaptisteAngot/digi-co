@@ -1,0 +1,49 @@
+.body{
+  height: 100%;
+}
+
+.bg {
+  background-image: url("../../../assets/img/partenaires/masseline11.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+div {
+  font-family: "Arial", sans-serif;
+}
+
+.titre
+{
+  width: 100%;
+  margin-top: 20em;
+  margin-bottom: 5em;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  /*background-color: crimson;*/
+}
+h1 {
+  font-size: 3.5em;
+}
+
+.image-article {
+  width: 100%;
+}
+
+.width {
+  width: 47%;
+  margin-left: 10px;
+}
+
+.clear {
+  clear:both;
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}

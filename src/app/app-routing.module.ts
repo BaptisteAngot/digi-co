@@ -21,7 +21,7 @@ const routes: Routes = [
   {path: 'article', component: ArticleComponent},
   {path: 'articleVideo', component: ArticledeuxComponent},
   {path: 'wip', component: WipComponent},
-  {path: 'partenaires/fcr-rouen', component: FcrRouenComponent},
+  {path: 'partenaires/fc-rouen', component: FcrRouenComponent},
   {path: 'partenaires/rn-rugby', component: RnRugbyComponent},
   {path: 'partenaires/masselin', component: MasselinComponent},
   {path: 'partenaires/altitude', component: AltitudeComponent},
