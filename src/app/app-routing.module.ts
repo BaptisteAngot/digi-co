@@ -7,6 +7,11 @@ import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {WipComponent} from './wip/wip.component';
 import {FcrRouenComponent} from './partenaires/fcr-rouen/fcr-rouen.component';
+import {RnRugbyComponent} from './partenaires/rn-rugby/rn-rugby.component';
+import {MasselinComponent} from './partenaires/masselin/masselin.component';
+import {AltitudeComponent} from './partenaires/altitude/altitude.component';
+import {CreditMutuelComponent} from './partenaires/credit-mutuel/credit-mutuel.component';
+import {NovicksComponent} from './partenaires/novicks/novicks.component';
 
 
 const routes: Routes = [
@@ -17,6 +22,11 @@ const routes: Routes = [
   {path: 'articleVideo', component: ArticledeuxComponent},
   {path: 'wip', component: WipComponent},
   {path: 'partenaires/fcr-rouen', component: FcrRouenComponent},
+  {path: 'partenaires/rn-rugby', component: RnRugbyComponent},
+  {path: 'partenaires/masselin', component: MasselinComponent},
+  {path: 'partenaires/altitude', component: AltitudeComponent},
+  {path: 'partenaires/credit-mutuel', component: CreditMutuelComponent},
+  {path: 'partenaires/novicks', component: NovicksComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
 
@@ -28,4 +38,5 @@ export class AppRoutingModule {
 }
 
 export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, ArticledeuxComponent,
-  WipComponent, PageNotFoundComponent, FcrRouenComponent];
+  WipComponent, FcrRouenComponent, RnRugbyComponent, MasselinComponent,
+  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, ];
