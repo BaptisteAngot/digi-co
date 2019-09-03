@@ -3,7 +3,7 @@
 }
 
 .bg {
-  background-image: url("../../../assets/img/partenaires/FCRouen_1.jpg");
+  background-image: url("../../../assets/img/partenaires/logo/bg_fcrouen.jpg");
 
   background-position: center;
   background-repeat: no-repeat;
@@ -25,6 +25,25 @@ div {
   text-align: center;
   /*background-color: crimson;*/
 }
- h1 {
-   font-size: 3.5em;
- }
+h1 {
+  font-size: 3.5em;
+}
+
+.image-article {
+  width: 100%;
+}
+
+.width {
+  width: 47%;
+  margin-left: 10px;
+}
+
+.clear {
+  clear:both;
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
