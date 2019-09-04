@@ -12,6 +12,7 @@ import {MasselinComponent} from './partenaires/masselin/masselin.component';
 import {AltitudeComponent} from './partenaires/altitude/altitude.component';
 import {CreditMutuelComponent} from './partenaires/credit-mutuel/credit-mutuel.component';
 import {NovicksComponent} from './partenaires/novicks/novicks.component';
+import {FcontactComponent} from './fcontact/fcontact.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'contact', component: IcontactComponent},
   {path: 'article', component: ArticleComponent},
   {path: 'articleVideo', component: ArticledeuxComponent},
+  {path: 'hello', component: FcontactComponent},
   {path: 'wip', component: WipComponent},
   {path: 'partenaires/fc-rouen', component: FcrRouenComponent},
   {path: 'partenaires/rn-rugby', component: RnRugbyComponent},
@@ -39,4 +41,4 @@ export class AppRoutingModule {
 
 export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, ArticledeuxComponent,
   WipComponent, FcrRouenComponent, RnRugbyComponent, MasselinComponent,
-  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, ];
+  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, FcontactComponent ];

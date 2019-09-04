@@ -32,6 +32,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {AuthGuardService} from './services/auth-guard.service';
 import {AuthService} from './services/auth.service';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {FcontactComponent} from './fcontact/fcontact.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     // TypingAnimationDirective,
     SignupComponent,
     SigninComponent,
+    FcontactComponent,
     routingComponents,
   ],
   imports: [
