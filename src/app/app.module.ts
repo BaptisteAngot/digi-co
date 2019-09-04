@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {FooterComponent} from './footer/footer.component';
-import {FcontactComponent} from './fcontact/fcontact.component';
 import {
   ButtonsModule,
   CheckboxModule,
@@ -15,7 +14,6 @@ import {
 } from 'angular-bootstrap-md';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
@@ -33,22 +31,17 @@ import {SigninComponent} from './auth/signin/signin.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthGuardService} from './services/auth-guard.service';
 import {AuthService} from './services/auth.service';
-import { ArticleclientComponent } from './articleclient/articleclient.component';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    FcontactComponent,
-    ArticledeuxComponent,
     HeaderComponent,
     // TypingAnimationDirective,
-    routingComponents,
-    WipComponent,
-    PageNotFoundComponent,
     SignupComponent,
     SigninComponent,
-    ArticleclientComponent
+    routingComponents,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +61,8 @@ import { ArticleclientComponent } from './articleclient/articleclient.component'
     MDBBootstrapModule.forRoot(),
     FormsModule,
     TypingAnimationModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, AuthService, AuthGuardService],
   bootstrap: [AppComponent]
