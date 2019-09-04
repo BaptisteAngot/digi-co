@@ -6,16 +6,12 @@ import {IcontactComponent} from './icontact/icontact.component';
 import {ArticledeuxComponent} from './articledeux/articledeux.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {WipComponent} from './wip/wip.component';
-<<<<<<< HEAD
-import {ArticleclientComponent} from './articleclient/articleclient.component';
-=======
 import {FcrRouenComponent} from './partenaires/fcr-rouen/fcr-rouen.component';
 import {RnRugbyComponent} from './partenaires/rn-rugby/rn-rugby.component';
 import {MasselinComponent} from './partenaires/masselin/masselin.component';
 import {AltitudeComponent} from './partenaires/altitude/altitude.component';
 import {CreditMutuelComponent} from './partenaires/credit-mutuel/credit-mutuel.component';
 import {NovicksComponent} from './partenaires/novicks/novicks.component';
->>>>>>> a37023f5084e01c1a2c178fcddbf72ecaa932177
 
 
 const routes: Routes = [
@@ -24,7 +20,6 @@ const routes: Routes = [
   {path: 'contact', component: IcontactComponent},
   {path: 'article', component: ArticleComponent},
   {path: 'articleVideo', component: ArticledeuxComponent},
-  {path: 'pagetype', component: ArticleclientComponent},
   {path: 'wip', component: WipComponent},
   {path: 'partenaires/fc-rouen', component: FcrRouenComponent},
   {path: 'partenaires/rn-rugby', component: RnRugbyComponent},
