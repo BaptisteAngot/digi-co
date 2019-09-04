@@ -1,0 +1,36 @@
+* {
+  font-family: Lato, sans-serif;
+}
+h1, h2, .partage {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+
+}
+
+h1, h2 {
+  font-size: 2.2em;
+  background-color: #0275d8 ;
+  color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+p {
+  padding: 5px;
+}
+
+.titre
+{
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+  /*background-color: crimson;*/
+}

@@ -1,0 +1,26 @@
+footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%
+}
+
+.img-footer {
+  text-align: center;
+  width: 100%;
+}
+
+fa-icon {
+  padding: 10px;
+  color: #1a74d5;
+}
+
+#lien_contact {
+  text-decoration: none;
+  color: white;
+}
+
+/*footer {*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*}*/

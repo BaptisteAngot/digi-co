@@ -1,0 +1,15 @@
+color-titre
+{
+  color: #3181de!important;
+}
+
+.navbar { box-shadow: none !important; } .btn { box-shadow: none !important; }
+
+.color-button{
+  background-image: url('/src/assets/img/icone/arrow-down-sign-to-navigate.svg') !important;
+}
+
+img {
+  width: 156px;
+  height: 40px;
+}
