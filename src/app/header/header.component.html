@@ -1,22 +1,69 @@
-<header>
+<!--<header>
   <mdb-navbar SideClass="navbar navbar-light fixed-top navbar-light white">
-    <mdb-navbar-brand><a class="navbar-brand" routerLink="/" routerLinkActive="active"><img
-      src="./assets/img/logo2.png" alt="logodigiandco"></a></mdb-navbar-brand>
+    <mdb-navbar-brand>
+
     <links>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link waves-light text-primary font-weight-bold" mdbWavesEffect routerLink="/accueil"
-             routerLinkActive="active">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light text-primary font-weight-bold" mdbWavesEffect routerLink="/article"
-             routerLinkActive="active">Articles</a>
+          <a class="nav-link waves-light text-primary font-weight-bold" mdbWavesEffect routerLink="/contact"
+             routerLinkActive="active">Partenaires</a>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-light text-primary font-weight-bold" mdbWavesEffect routerLink="/contact"
-             routerLinkActive="active">Contact</a>
+             routerLinkActive="active">News</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light text-primary font-weight-bold" mdbWavesEffect routerLink="/contact"
+             routerLinkActive="active">Hello There</a>
+        </li>
+
       </ul>
     </links>
   </mdb-navbar>
+</header>-->
+<header>
+  <a class="navbar-brand" routerLink="/" routerLinkActive="active"><img style="margin: 22px 0 0 22px;"
+                                                                        src="./assets/img/logo2.png"
+                                                                        alt="logodigiandco"></a>
+  <a style="float: right;" type="button" mdbBtn color="white" class="relative waves-light" (click)="basicModal.show()"
+     mdbWavesEffect>
+    <fa-icon style="color: rgb(124, 187, 218);" class="fa-3x" [icon]="faBars"></fa-icon>
+  </a>
+  <div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog"
+       aria-labelledby="myBasicModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class=" justify-content-center">
+            <button type="button" mdbBtn color="transparent" class="close pull-right" aria-label="Close"
+                    (click)="basicModal.hide()" mdbWavesEffect>
+              <fa-icon style="color: rgb(124, 187, 218); margin-bottom: 25px;" class="fa-3x" [icon]="faTimes"></fa-icon>
+            </button>
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="0.5s">
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item text-center linkModal"><a class="nav-link waves-light text-primary font-weight-bold"
+                                                            routerLinkActive="active" routerLink="/">PARTENAIRES</a>
+              </li>
+              <li class="nav-item text-center linkModal"><a class="nav-link waves-light text-primary font-weight-bold"
+                                                            routerLinkActive="active"
+                                                            routerLink="/">NOUVEAUT&Eacute;S</a></li>
+              <li class="nav-item text-center linkModal"><a class="nav-link waves-light text-primary font-weight-bold"
+                                                            routerLinkActive="active" routerLink="/">HELLO THERE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="justify-content-center">
+            <button type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Mentions Légales</button>
+            <button type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>&Agrave; Propos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
