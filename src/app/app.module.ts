@@ -33,6 +33,7 @@ import {AuthGuardService} from './services/auth-guard.service';
 import {AuthService} from './services/auth.service';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {FcontactComponent} from './fcontact/fcontact.component';
+import {RecaptchaModule} from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import {FcontactComponent} from './fcontact/fcontact.component';
     FormsModule,
     TypingAnimationModule,
     HttpClientModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    RecaptchaModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, AuthService, AuthGuardService],
   bootstrap: [AppComponent]
