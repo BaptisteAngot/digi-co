@@ -1,10 +1,10 @@
 export const environment = {
-  production: false,
+  production: true,
   firebase: {
-    apiKey: '',
+    apiKey: 'AIzaSyBYKzYXyg1Z2zVBE4lTgzuIwRmNRGXSGuM',
     authDomain: '',
     databaseURL: '',
-    projectId: '',
+    projectId: 'digiandco-adf48',
     storageBucket: '',
     messagingSenderId: ''
   }

@@ -1,6 +1,11 @@
-* {
-  font-family: "Arial", sans-serif;
+@font-face {
+  font-family: moonGetHeavy;
+  src: url("../../assets/font/moon_get-Heavy.ttf");
 }
+*, html, body {
+  font-family: moonGetHeavy, sans-serif;
+}
+
 
 color-titre {
   color: #3181de !important;
@@ -24,7 +29,7 @@ img {
 }
 
 .linkModal {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .header {

@@ -2,6 +2,7 @@
 	RewriteEngine On
 	RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 	RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+	RewriteCond %{HTTP_COOKIE} !^.*7cb95965dba83cff4e93fcd38cc1cb20.*$
 	RewriteRule ^ - [L]
 	RewriteRule ^(.+[^/])/$ http://%{HTTP_HOST}/$1 [R=301,L]
   RewriteRule ^ /index.html

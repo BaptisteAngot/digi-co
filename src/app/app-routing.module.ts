@@ -41,4 +41,4 @@ export class AppRoutingModule {
 
 export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, ArticledeuxComponent,
   WipComponent, FcrRouenComponent, RnRugbyComponent, MasselinComponent,
-  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, FcontactComponent ];
+  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, FcontactComponent];
