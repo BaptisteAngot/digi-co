@@ -46,7 +46,6 @@ import {FormGroup, FormBuilder, Validator} from '@angular/forms';
     SigninComponent,
     FcontactComponent,
     routingComponents,
-    DashboardComponent,
   ],
   imports: [
     BrowserModule,
