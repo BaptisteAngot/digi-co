@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
 
 
 @Component({
@@ -8,8 +9,8 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class FcontactComponent implements OnInit {
-
-  constructor() {
+  contactForm: FormGroup;
+  constructor(private formBuilder: FormBuilder) {
   }
 
   ngOnInit() {

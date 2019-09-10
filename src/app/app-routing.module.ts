@@ -13,7 +13,7 @@ import {AltitudeComponent} from './partenaires/altitude/altitude.component';
 import {CreditMutuelComponent} from './partenaires/credit-mutuel/credit-mutuel.component';
 import {NovicksComponent} from './partenaires/novicks/novicks.component';
 import {FcontactComponent} from './fcontact/fcontact.component';
-
+import {ResumeComponent} from './partenaires/resume/resume.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'accueil', pathMatch: 'full'},
@@ -29,6 +29,7 @@ const routes: Routes = [
   {path: 'partenaires/altitude', component: AltitudeComponent},
   {path: 'partenaires/credit-mutuel', component: CreditMutuelComponent},
   {path: 'partenaires/novicks', component: NovicksComponent},
+  {path: 'partenaires', component: ResumeComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
 
@@ -41,4 +42,4 @@ export class AppRoutingModule {
 
 export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, ArticledeuxComponent,
   WipComponent, FcrRouenComponent, RnRugbyComponent, MasselinComponent,
-  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, FcontactComponent];
+  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, FcontactComponent, ResumeComponent];

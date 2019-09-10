@@ -35,6 +35,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {RecaptchaModule} from 'ng-recaptcha';
 import {FormGroup, FormBuilder, Validator} from '@angular/forms';
+import { ResumeComponent } from './partenaires/resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import {FormGroup, FormBuilder, Validator} from '@angular/forms';
     SigninComponent,
     FcontactComponent,
     routingComponents,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
