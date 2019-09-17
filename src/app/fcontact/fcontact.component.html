@@ -9,7 +9,7 @@
   </div>
 </div>
 <div class="animated fadeIn">
-  <form [formGroup]="contactForm" (ngSubmit)="vm.sendMail();" class="formu text-center" method="post">
+  <form [formGroup]="contactForm" class="formu text-center" method="post">
     <label for="prenom"></label>
     <input type="text" id="prenom" name="prenom" placeholder="Prénom" required="required" formControlName="prenom">
     <label for="nom"></label>
