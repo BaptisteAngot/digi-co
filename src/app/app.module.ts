@@ -47,7 +47,7 @@ import { ResumeComponent } from './partenaires/resume/resume.component';
     SigninComponent,
     FcontactComponent,
     routingComponents,
-    ResumeComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

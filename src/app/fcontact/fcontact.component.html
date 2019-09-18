@@ -1,27 +1,30 @@
-<?php ?>
-echo '
 <div class="animated ">
   <div class="">
     <div class=" text-center">
       <div class=" h-100 d-inline-block titre">
-        <div class="titre"><h1 style="font-size: 2.5em; color: black; font-weight: bolder" class="wow fadeInUp display-4">On s'occupe de vous !</h1></div>
+        <div class="titre"><h1 style="font-size: 2.5em; color: black; font-weight: bolder"
+                               class="wow fadeInUp display-4">On s'occupe de vous !</h1></div>
       </div>
     </div>
   </div>
 </div>
 <div class="animated fadeIn">
-  <form [formGroup]="" class="formu text-center">
+  <form [formGroup]="contactForm" class="formu text-center" method="post">
     <label for="prenom"></label>
-    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required="required">
+    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required="required" formControlName="prenom">
     <label for="nom"></label>
-    <input type="text" id="nom" name="nom" placeholder="Nom" required="required">
+    <input type="text" id="nom" name="nom" placeholder="Nom" required="required" formControlName="nom"
+           ngModel="vm.nodemailer.name">
     <label for="mail"></label>
-    <input type="mail" id="mail" name="mail" placeholder="Email" required="required">
+    <input type="mail" id="mail" name="mail" placeholder="Email" required="required" formControlName="mail"
+           ngModel="vm.nodemailer.email">
     <label for="societe"></label>
-    <input type="text" name="societe" id="societe" placeholder="Société" >
+    <input type="text" name="societe" id="societe" placeholder="Société" formControlName="societe">
     <label for="message"></label>
-    <textarea id="message" name="message" cols="30" rows="10" placeholder="Vos projets, vos idées, ..."></textarea>
-    <mdb-checkbox [checked]="false" [default]="true" class="rtext" required="required">En soumettant ce formulaire, j'accepte que les
+    <textarea id="message" name="message" cols="30" rows="10" placeholder="Vos projets, vos idées, ..."
+              formControlName="message" ngModel="vm.nodemailer.message"></textarea>
+    <mdb-checkbox [checked]="false" [default]="true" class="rtext" required="required">En soumettant ce formulaire,
+      j'accepte que les
       informations saisies
       soient exploitées dans le cadre de
       la demande de contact et de la relation commerciale qui peut en découler.
