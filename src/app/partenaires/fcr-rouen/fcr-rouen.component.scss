@@ -1,4 +1,4 @@
-.body{
+.body {
   height: 100%;
 }
 
@@ -15,8 +15,7 @@ div {
   font-family: "Arial", sans-serif;
 }
 
-.titre
-{
+.titre {
   width: 100%;
   margin-top: 20em;
   margin-bottom: 5em;
@@ -25,6 +24,7 @@ div {
   text-align: center;
   /*background-color: crimson;*/
 }
+
 h1 {
   font-size: 3.5em;
 }
@@ -39,7 +39,7 @@ h1 {
 }
 
 .clear {
-  clear:both;
+  clear: both;
 }
 
 img {
@@ -47,3 +47,19 @@ img {
   margin-bottom: 20px;
 
 }
+
+/*@media only screen and (min-width: 1280px) {
+  .colo1 {
+    float: left;
+    width: 450px;
+    height: 325px;
+    font-weight: bold;
+  }
+  .colo2 {
+    float: right;
+    width: 450px;
+    height: 325px;
+    font-weight: bold;
+  }
+}
+*/
