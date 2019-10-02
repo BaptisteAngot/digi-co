@@ -2,6 +2,7 @@
   font-family: moonGetHeavy;
   src: url("../../assets/font/moon_get-Heavy.ttf");
 }
+
 *, html, body {
   font-family: moonGetHeavy, sans-serif;
 }
@@ -37,4 +38,8 @@ img {
   background-color: white;
   width: 100%;
   z-index: 100000;
+}
+
+.simple-text {
+  font-family: "Arial Black", sans-serif;
 }

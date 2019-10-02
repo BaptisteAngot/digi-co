@@ -3,7 +3,8 @@
     <a class="navbar-brand" routerLink="/" routerLinkActive="active"><img style="margin: 22px 0 0 22px;"
                                                                           src="../../assets/img/logo2.png"
                                                                           alt="Logo DigiandCo"></a>
-    <a style="float: right; display: inline-block; margin-top: 15px;" type="button" mdbBtn color="white" class="relative waves-light" (click)="basicModal.show()"
+    <a style="float: right; display: inline-block; margin-top: 15px;" type="button" mdbBtn color="white"
+       class="relative waves-light" (click)="basicModal.show()"
        mdbWavesEffect>
       <fa-icon style="color: rgb(124, 187, 218);" class="fa-2x" [icon]="faBars"></fa-icon>
     </a>
@@ -24,11 +25,17 @@
             <div class="wow fadeInUp" data-wow-delay="0.5s">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item text-center linkModal"><a class="nav-link waves-light text-primary font-weight-bold"
-                                                              routerLinkActive="active" routerLink="/partenaires" (click)="basicModal.hide()">PARTENAIRES</a>
+                                                              routerLinkActive="active" routerLink="/partenaires"
+                                                              (click)="basicModal.hide()">PARTENAIRES</a>
                 </li>
                 <li class="nav-item text-center linkModal"><a class="nav-link waves-light text-primary font-weight-bold"
-                                                              routerLinkActive="active" routerLink="/contact" (click)="basicModal.hide()">HELLO THERE</a>
+                                                              routerLinkActive="active" routerLink="/contact"
+                                                              (click)="basicModal.hide()">HELLO THERE</a>
                 </li>
+                <li class="nav-item text-center linkModal"><a class="navl-link waves-light text-dark h5 simple-text"
+                                                              routerLinkActive="active" routerLink="/mentions-legales"
+                                                              (click)="basicModal.hide()">Mentions
+                  Légales</a></li>
               </ul>
             </div>
           </div>

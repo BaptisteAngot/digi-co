@@ -18,7 +18,7 @@ import {Subscription} from 'rxjs';
     '<p class="text-center sous-titre">En poursuivant la navigation sur le site, vous acceptez l\'utilisation' +
     ' des cookies pour améliorer l\'expérience utilisateur, réaliser des statistiques et permettre le partage de contenu.</p>' +
     '<button  class ="btn btn-info" (click)="dismiss()">Accepter tous les cookies</button><br /><button (click)="dismiss()" ' +
-    'class="btn btn-dark confid" routerLink="/wip" routerLinkActive="active">En savoir plus</button></cookie-law>',
+    'class="btn btn-dark confid" routerLink="/mentions-legales" routerLinkActive="active">En savoir plus</button></cookie-law>',
   styles: [
     'router-outlet ~ * {' +
     'position: absolute;' +
