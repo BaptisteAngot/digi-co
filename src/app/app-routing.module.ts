@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: 'accueil', component: HomeComponent},
   {path: 'contact', component: IcontactComponent},
   {path: 'article/:_id', component: ArticleComponent},
-  {path: 'articleVideo', component: ArticledeuxComponent},
+  {path: 'articles/liste', component: ArticledeuxComponent},
   {path: 'hello', component: FcontactComponent},
   {path: 'wip', component: WipComponent},
   {path: 'partenaires/fc-rouen', component: FcrRouenComponent},
