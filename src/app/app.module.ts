@@ -41,7 +41,6 @@ import {FormGroup, FormBuilder, Validator} from '@angular/forms';
 import {ResumeComponent} from './partenaires/resume/resume.component';
 import {ConnectionService} from './services/connection.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +75,7 @@ import {ConnectionService} from './services/connection.service';
     TypingAnimationModule,
     HttpClientModule,
     NoopAnimationsModule,
-    RecaptchaModule,
+    RecaptchaModule
   ],
   providers: [AuthService, AuthGuardService, ConnectionService],
   bootstrap: [AppComponent]
