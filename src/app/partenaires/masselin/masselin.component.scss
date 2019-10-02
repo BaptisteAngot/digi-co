@@ -48,18 +48,19 @@ img {
 
 }
 @media only screen and (min-width: 1280px) {
+
   .colo1 {
-    padding-top: 20px;
     float: left;
     width: 450px;
     height: 325px;
     font-weight: bold;
+    padding: 25px;
   }
   .colo2 {
-    padding-top: 20px;
     float: right;
     width: 450px;
     height: 325px;
     font-weight: bold;
+    padding: 25px;
   }
 }

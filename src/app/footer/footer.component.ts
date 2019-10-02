@@ -21,6 +21,7 @@ export class FooterComponent implements OnInit {
   faLinkedin = faLinkedin;
   faInstagram = faInstagram;
   faYoutube = faYoutubeSquare;
+
   constructor() {
 
   }

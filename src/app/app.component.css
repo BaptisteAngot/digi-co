@@ -3,3 +3,7 @@ router-outlet ~ * {
   height: 100%;
   width: 100%;
 }
+#confid {
+  float: right;
+
+}
