@@ -27,6 +27,9 @@ div {
 
 h1 {
   font-size: 3.5em;
+  margin-left: 0;
+  margin-right: 0;
+
 }
 
 .image-article {
@@ -48,18 +51,20 @@ img {
 
 }
 
-/*@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
+
   .colo1 {
     float: left;
     width: 450px;
     height: 325px;
     font-weight: bold;
+    padding: 25px;
   }
   .colo2 {
     float: right;
     width: 450px;
     height: 325px;
     font-weight: bold;
+    padding: 25px;
   }
 }
-*/
