@@ -6,6 +6,7 @@ import { filter } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 declare var jQuery: any;
 import { Article } from '../shared/articles';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,7 @@ export class HomeComponent implements OnInit {
       });
     this.api.getArticlesLimit()
       .subscribe((res: any) => {
+        console.log(res.articles.created_at);
         this.data = res.articles;
         console.log(this.data);
         this.isLoadingResults = false;
