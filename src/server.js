@@ -1,44 +1,99 @@
+//const compression = require('compression');
+const express = require('express');
+const nodemailer = require('nodemailer');
+const app = express();
+const port = 3000;
+const bodyParser = require('body-parser');
+//app.use(compression());
 
-'use strict';
+const transporter = nodemailer.createTransport({
 
-var express = require('express');
-var app = express();
+  host: 'smtp.gmail.com',
+  provider: 'gmail',
+  port: 465,
+  secure: true,
+  auth: {
+    user: ' ',
+    pass: ' '
+  },
+  tls: {
+    rejectUnauthorized: false
+  }
+});
 
-var bodyParser = require('body-parser');
-
-var nodemailer = require('nodemailer');
-
-var port = process.env.PORT || 5000;
-
-app.use(express.static('./src/client/'));
-app.use(express.static('./'));
-app.use(express.static('./.tmp'));
-app.use('/*', express.static('./src/client/index.html'));
-
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.post('/sendMail', function(req, res) {
-  var transporter = nodemailer.createTransport('smtps://username%40gmail.com:password@smtp.gmail.com');
-  var data = req.body;
-  var mailOptions = {
-    from: data.contactEmail,
-    to: 'contact@deshaisarmand.fr',
-    subject: 'Email sent by ' + data.contactName,
-    text: data.contactMessage
+app.use(function (req, res, next) {
+
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.post('/hello', function (req, res) {
+
+  let senderPrenom = req.body.prenom;
+  let senderNom = req.body.nom;
+  let senderMail = req.body.mail;
+  let senderSociete = req.body.societe;
+  let senderMessage = req.body.message;
+  let copyToSender = req.body.contactFormCopy;
+
+  let mailOptions = {
+    to: ['deshais.armand@gmail.com'],
+    from: senderPrenom, senderNom, senderMail,
+    subject: 'Message sur digiandco.com', 'societe': senderSociete,
+    text: senderMessage,
+    replyTo: senderMail
   };
 
-  transporter.sendMail(mailOptions, function(error, info) {
+  if (senderPrenom === '') {
+    res.status(400);
+    res.send({
+      message: 'Bad request'
+    });
+    return;
+  }
+
+  if (senderNom === '') {
+    res.status(400);
+    res.send({
+      message: 'Bad request'
+    });
+    return;
+  }
+
+  if (senderSociete === '') {
+    res.status(400);
+    res.send({
+      message: 'Bad request'
+    });
+    return;
+  }
+
+  if (senderMessage === '') {
+    res.status(400);
+    res.send({
+      message: 'Bad request'
+    });
+    return;
+  }
+
+  if (copyToSender) {
+    mailOptions.to.push(senderMail);
+  }
+
+  transporter.sendMail(mailOptions, function (error, response) {
     if (error) {
-      return console.log(error);
+      console.log(error);
+      res.end('error');
+    } else {
+      console.log('Message sent: ', response);
+      res.end('sent');
     }
-    console.log('Message sent: ' + info.response);
-    console.log('Data:' + data.contactName);
   });
-  res.json(data);
 });
 
 app.listen(port, function () {
-  console.log('Express app listening on port: ' + port);
-  console.log(__dirname);
+  console.log('Express started on port: ', port);
 });
