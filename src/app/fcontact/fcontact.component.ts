@@ -1,5 +1,6 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-fcontact',
@@ -8,37 +9,30 @@ import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 })
 
 export class FcontactComponent implements OnInit {
-  @ViewChild('recaptcha', {static: true }) recaptchaElement: ElementRef;
+  contactForm: FormGroup;
 
-  constructor() { }
-
-  ngOnInit() {
-    this.addRecaptchaScript();
+  constructor(private formBuilder: FormBuilder) {
+    this.createContactForm();
   }
 
-  renderReCaptch() {
-    window['grecaptcha'].render(this.recaptchaElement.nativeElement, {
-      'sitekey' : '6LetxbYUAAAAAOvi7t385XsbW86N-XsZxz05-Jh_',
-      'callback': (response) => {
-        console.log(response);
-      }
+  onSubmit() {
+    console.log('Your form data : ', this.contactForm.value);
+  }
+
+  createContactForm() {
+    this.contactForm = this.formBuilder.group({
+      prenom: [''],
+      nom: [''],
+      mail: [''],
+      societe: [''],
+      message: ['']
     });
   }
 
-  addRecaptchaScript() {
-
-    window['grecaptchaCallback'] = () => {
-      this.renderReCaptch();
-    }
-
-    (function(d, s, id, obj){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) { obj.renderReCaptch(); return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "https://www.google.com/recaptcha/api.js?onload=grecaptchaCallback&amp;render=explicit";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'recaptcha-jssdk', this));
+  ngOnInit() {
 
   }
+
+
 
 }

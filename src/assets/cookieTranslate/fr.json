@@ -1,0 +1,11 @@
+{
+  "cookie": {
+    "header": "Cookies utilisés sur ce site web !",
+    "message": "Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site.",
+    "dismiss": "&Ccedil;a marche !",
+    "allow": "J'accepte",
+    "deny": "Refuser",
+    "link": "En apprendre davantage",
+    "policy": "Politique de cookie"
+  }
+}

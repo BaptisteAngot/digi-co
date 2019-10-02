@@ -1,22 +1,19 @@
-import {Component, OnInit, OnDestroy} from '@angular/core';
-import {Router, NavigationEnd} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Subscription} from 'rxjs';
+import {NavigationEnd, Router} from '@angular/router';
 import {NgwWowService} from 'ngx-wow';
-import {Subscription} from 'rxjs/Subscription';
 import {filter} from 'rxjs/operators';
 
-declare var jQuery: any;
-
 @Component({
-  selector: 'app-icontact',
-  templateUrl: './icontact.component.html',
-  styleUrls: ['./icontact.component.css']
+  selector: 'app-mentioleg',
+  templateUrl: './mentioleg.component.html',
+  styleUrls: ['./mentioleg.component.scss']
 })
-export class IcontactComponent implements OnInit {
-  contactpath: string;
+export class MentiolegComponent implements OnInit {
+
   private wowSubscription: Subscription;
 
   constructor(private router: Router, private wowService: NgwWowService) {
-    this.contactpath = './assets/img/contact_rouen.jpg';
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(event => {
       this.wowService.init();
     });
@@ -27,5 +24,4 @@ export class IcontactComponent implements OnInit {
       (item: HTMLElement) => {
       });
   }
-
 }

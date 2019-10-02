@@ -3,6 +3,7 @@ import {faFacebookSquare} from '@fortawesome/free-brands-svg-icons/faFacebookSqu
 import {faTwitterSquare} from '@fortawesome/free-brands-svg-icons/faTwitterSquare';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons/faInstagram';
+import {faYoutubeSquare} from '@fortawesome/free-brands-svg-icons/faYoutubeSquare';
 import {faArrowAltCircleDown} from '@fortawesome/free-regular-svg-icons/faArrowAltCircleDown';
 import {faArrowAltCircleUp} from '@fortawesome/free-regular-svg-icons/faArrowAltCircleUp';
 
@@ -19,6 +20,7 @@ export class FooterComponent implements OnInit {
   faTwitterSquare = faTwitterSquare;
   faLinkedin = faLinkedin;
   faInstagram = faInstagram;
+  faYoutube = faYoutubeSquare;
 
   constructor() {
 

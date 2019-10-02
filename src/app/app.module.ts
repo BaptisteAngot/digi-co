@@ -1,5 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CookieLawModule} from 'angular2-cookie-law';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {FooterComponent} from './footer/footer.component';
@@ -13,6 +15,7 @@ import {
   WavesModule
 } from 'angular-bootstrap-md';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
+
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule, MatSortModule, MatTableModule} from '@angular/material';
@@ -31,6 +34,8 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {RecaptchaModule} from 'ng-recaptcha';
 import {FormGroup, FormBuilder, Validator} from '@angular/forms';
+import {ResumeComponent} from './partenaires/resume/resume.component';
+
 
 @NgModule({
   declarations: [
@@ -40,10 +45,12 @@ import {FormGroup, FormBuilder, Validator} from '@angular/forms';
     // TypingAnimationDirective,
     FcontactComponent,
     routingComponents,
-    // DashboardComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    CookieLawModule,
     ReactiveFormsModule,
     CheckboxModule,
     InputsModule,

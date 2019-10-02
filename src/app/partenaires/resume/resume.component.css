@@ -1,0 +1,43 @@
+.contenu {
+  padding-top: 80px;
+}
+
+.titre {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: moonGetHeavy, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.imgResume {
+  padding: 10px;
+}
+
+img {
+  width: 355px;
+  height: 200px;
+}
+
+img:hover {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
+h2 {
+  font-family: moonGetHeavy, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  padding: 10px;
+}
+
+p {
+  font-family: "Arial Black", sans-serif;
+  text-align: center;
+  color: black;
+  padding: 5px;
+}
