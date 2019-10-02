@@ -1,22 +1,22 @@
-<div class="animated fadeIn">
+<div class="animated">
+  <div class=" h-100 d-inline-block actus wow bounceIn"><h2 style="font-size: 1.2em;"
+                                                            class="display-2 font-weight-bold text-center">ACTUS
+  </h2></div>
 <div class="container">
-  <div class="row">
-    <ul class="titre">
-      <li><h1 class="wow fadeInUpBig text-center">&laquo; Une soirée réussie avec des objectifs compris et
-        remplis &raquo;</h1></li>
-      <li class="temoin"><p class="surligne">David</p> - <p>Gérant</p></li>
-    </ul>
-
-    <div class="embed-responsive embed-responsive-16by9"
-         style=" margin: auto;">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VOVVAbAmcy8"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+    <div class="row wow fadeIn article" data-wow-delay="0.3s" *ngFor="let dat of data" [routerLink]="['/article/', dat._id]">
+      <div class="float-left">
+        <img src='http://localhost:3000/{{dat.articleImage}}' class=" img-thumbnail image-article rounded" alt="dot">
+      </div>
+      <div class="float-left">
+        <div class="wow fadeInUp float-left">
+          <p class="titre-artcile float-left text-uppercase">{{dat.art_type }}</p>
+          <img src="./assets/img/icone/dot.png" class="img-dot float-left" alt="dot">
+          <p class="float-left font-weight-normal">{{dat.created_at }}</p>
+          <p class="text-uppercase float-left">{{dat.title }}</p>
+        </div>
+        <span class="clear"></span>
+      </div>
+      <div class=""></div>
     </div>
-    <div class="card-body text-center">
-      <a class="" href="#"><span>PARTAGEZ : </span>
-        <fa-icon class="fa-2x" [icon]="faLinkedin"></fa-icon>
-      </a></div>
-  </div>
 </div>
 </div>

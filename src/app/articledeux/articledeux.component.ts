@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { ApiService } from '../services/api.service';
+
 
 
 @Component({
@@ -9,11 +11,18 @@ import {faLinkedin} from '@fortawesome/free-brands-svg-icons/faLinkedin';
 })
 export class ArticledeuxComponent implements OnInit {
   faLinkedin = faLinkedin;
-
-  constructor() {
+  data;
+  constructor(private api: ApiService) {
   }
 
   ngOnInit() {
+    this.api.getArticles()
+      .subscribe((res: any) => {
+        this.data = res.articles;
+        console.log(this.data);
+      }, err => {
+        console.log(err);
+      });
   }
 
 }

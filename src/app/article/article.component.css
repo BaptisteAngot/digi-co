@@ -1,6 +1,7 @@
 * {
   font-family: Lato, sans-serif;
 }
+
 h1, h2, .partage {
   text-align: center;
   font-weight: bolder;
@@ -28,9 +29,13 @@ p {
 .titre
 {
   width: 100%;
-  margin-top: 2em;
+  margin-top: 3em;
   margin-bottom: 1em;
   font-family: "Arial Black", sans-serif;
   font-weight: bold;
   /*background-color: crimson;*/
+}
+
+.image-article {
+  width: 100%;
 }

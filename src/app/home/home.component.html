@@ -36,64 +36,32 @@
         <h3 class="wow fadeInUp display-4" data-wow-delay="0.5s"><a style="color: black; font-size: 0.9em;"
                                                                     routerLink="/partenaires/novicks"
                                                                     routerLinkActive="active">NOVICK'S</a></h3>
-        <p class="wow fadeInUp h2-responsive font-weight-bold plus" data-wow-delay="0.5s"><a class="plus"
-                                                                                             routerLink="/partenaires"
-                                                                                             routerLinkActive="active">Plus?</a>
-        </p>
       </div>
       <div class=" h-100 d-inline-block actus wow bounceIn"><h2 style="font-size: 1.2em;"
-                                                                class="display-2 font-weight-bold"><a class="linkRs"
-                                                                                                      href="https://www.facebook.com/Digiandco/"
-                                                                                                      target="_blank">ACTUS</a>
+                                                                class="display-2 font-weight-bold"><a class="linkRs" [routerLink]="['/articles/liste']" >ACTUS</a>
       </h2></div>
-      <!-- <div class="container text-left">
+      <div class="container text-left">
                <a style="color: black" routerLink="/article" routerLinkActive="active">
-                 <div class="row">
+                 <div class="row" *ngFor="let dat of data" [routerLink]="['/article/', dat._id]">
                    <div class="col-2"></div>
                    <div class="col-8">
                      <div class="wow fadeInUp float-left">
-                       <p class="titre-artcile float-left text-uppercase">ARTICLE</p>
+                       <p class="titre-artcile float-left text-uppercase">{{dat.art_type }}</p>
                        <img src="./assets/img/icone/dot.png" class="img-dot float-left" alt="dot">
-                       <p class="float-left font-weight-normal">01 01 2020</p>
-                       <p class="text-uppercase float-left">L'&Eacute;XP&Eacute;RIENCE COLLABORATEUR ET PRODUCTIVIT&Eacute;</p>
+                       <p class="float-left font-weight-normal">{{dat.created_at }}</p>
+                       <p class="text-uppercase float-left">{{dat.title }}</p>
                      </div>
                    </div>
                    <div class="col-2"></div>
                  </div>
                </a>
+        <p class="wow fadeInUp h2-responsive font-weight-bold plus text-center" data-wow-delay="0.5s"><a class="plus "
+                                                                                             routerLink="/articles/liste"
+                                                                                             routerLinkActive="active">Plus?</a>
+        </p>
                <div class="clear"></div>
-               <a style="color: black" routerLink="/article" routerLinkActive="active">
-                 <div class="row">
-                   <div class="col-2"></div>
-                   <div class="col-8">
-                     <div class="wow fadeInUp float-left">
-                       <p class="titre-artcile float-left text-uppercase">News </p>
-                       <img src="./assets/img/icone/dot.png" class="img-dot float-left">
-                       <p class="float-left font-weight-normal">31 12 2019</p>
-                       <p class="text-uppercase float-left">Un nouvel équipier chez Digi and Co</p>
-                     </div>
-                   </div>
-                   <div class="col-2"></div>
-                 </div>
-               </a>
-               <div class="clear"></div>
-               <a style="color: black" routerLink="/article" routerLinkActive="active">
-                 <div class="row">
-                   <div class="col-2"></div>
-                   <div class="col-8">
-                     <div class="wow fadeInUp float-left">
-                       <p class="titre-artcile float-left text-uppercase">Partenariat </p>
-                       <img src="./assets/img/icone/dot.png" class="img-dot float-left">
-                       <p class="float-left font-weight-normal">01 01 2020</p>
-                       <p class="text-uppercase float-left">Retrouvez le mur chez notre partenaire</p>
-                     </div>
-                   </div>
-                   <div class="col-2"></div>
-                 </div>
-               </a>
-               <div class="clear"></div>
-             </div>-->
-      <div class="wow banniere text-center h1-responsive">
+      </div>
+      <div class="wow banniere text-center h1-responsive"  data-wow-delay="0.5s">
         <div class="" typingAnimation [typeSpeed]="20" [startDelay]="1000">
           <p>
             Vous êtes intéressés?

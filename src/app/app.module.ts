@@ -18,7 +18,7 @@ import {AppRoutingModule, routingComponents} from './app-routing.module';
 
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {MatDialogModule} from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material';
+import {MatButtonModule, MatSortModule, MatTableModule} from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {HeaderComponent} from './header/header.component';
@@ -29,11 +29,7 @@ import {WipComponent} from './wip/wip.component';
 import {FormsModule} from '@angular/forms';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
-import {SignupComponent} from './auth/signup/signup.component';
-import {SigninComponent} from './auth/signin/signin.component';
 import {HttpClientModule} from '@angular/common/http';
-import {AuthGuardService} from './services/auth-guard.service';
-import {AuthService} from './services/auth.service';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {RecaptchaModule} from 'ng-recaptcha';
@@ -47,8 +43,6 @@ import {ResumeComponent} from './partenaires/resume/resume.component';
     FooterComponent,
     HeaderComponent,
     // TypingAnimationDirective,
-    SignupComponent,
-    SigninComponent,
     FcontactComponent,
     routingComponents,
     ResumeComponent
@@ -75,9 +69,11 @@ import {ResumeComponent} from './partenaires/resume/resume.component';
     TypingAnimationModule,
     HttpClientModule,
     NoopAnimationsModule,
-    RecaptchaModule
+    RecaptchaModule,
+    MatTableModule,
+    MatSortModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, AuthService, AuthGuardService],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 
