@@ -4,19 +4,20 @@
   </h2></div>
 <div class="container">
   <a>
-    <div class="row wow fadeIn article" data-wow-delay="0.3s" *ngFor="let dat of data" [routerLink]="['/article/', dat._id]">
-      <div class="">
+    <div class="row wow fadeIn article d-flex" data-wow-delay="0.3s" *ngFor="let dat of data" [routerLink]="['/article/', dat._id]">
+      <div class="allo">
         <img src='http://localhost:3000/{{dat.articleImage}}' class=" img-thumbnail float-left image-article rounded" alt="dot">
-      </div>
-      <div class="float-left">
-        <div class="wow fadeInUp">
-          <p class="titre-artcile text-uppercase float-left"> {{dat.art_type }}</p>
-          <img src="./assets/img/icone/dot.png" class="img-dot" alt="dot">
-          <p class="font-weight-normal"> {{dat.created_at | date :'dd/MM/yy'}}</p>
-          <p class="text-uppercase"> {{dat.title }}</p>
+        <div class="allo-4">
+          <div class="wow fadeInUp">
+            <p class="titre-artcile text-uppercase"> {{dat.art_type }}</p>
+            <img src="./assets/img/icone/dot.png" class="img-dot" alt="dot">
+            <p class="font-weight-normal"> {{dat.created_at | date :'dd/MM/yy'}}</p>
+            <p class="text-uppercase"> {{dat.title }}</p>
+          </div>
+          <span class="clear"></span>
         </div>
-        <span class="clear"></span>
       </div>
+
       <div class=""></div>
     </div>
   </a>

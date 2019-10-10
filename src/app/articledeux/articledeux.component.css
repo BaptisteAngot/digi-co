@@ -86,3 +86,13 @@ a {
 .clear {
   clear:both;
 }
+
+.allo {
+  margin-bottom: 20px;
+}
+
+.allo-4{
+  width: 70%;
+  height: 100%;
+  float: right;
+}
