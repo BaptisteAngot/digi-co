@@ -29,11 +29,7 @@ import {WipComponent} from './wip/wip.component';
 import {FormsModule} from '@angular/forms';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 // import {HashLocationStrategy, LocationStrategy} from '@angular/common';
-import {SignupComponent} from './auth/signup/signup.component';
-import {SigninComponent} from './auth/signin/signin.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {AuthGuardService} from './services/auth-guard.service';
-import {AuthService} from './services/auth.service';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {RecaptchaModule} from 'ng-recaptcha';
@@ -49,8 +45,6 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
     FooterComponent,
     HeaderComponent,
     // TypingAnimationDirective,
-    SignupComponent,
-    SigninComponent,
     FcontactComponent,
     routingComponents,
     ResumeComponent
@@ -79,7 +73,7 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
     NoopAnimationsModule,
     RecaptchaModule,
   ],
-  providers: [{provide: HashLocationStrategy, useClass: LocationStrategy}, AuthService, AuthGuardService, ConnectionService],
+  providers: [{provide: HashLocationStrategy, useClass: LocationStrategy}, ConnectionService],
   bootstrap: [AppComponent]
 })
 
