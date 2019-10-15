@@ -6,7 +6,7 @@
   <a>
     <div class="row wow fadeIn article d-flex" data-wow-delay="0.3s" *ngFor="let dat of data" [routerLink]="['/article/', dat._id]">
       <div class="allo">
-        <img src='http://localhost:3000/{{dat.articleImage}}' class=" img-thumbnail float-left image-article rounded" alt="dot">
+        <img src='http://api.digiandco.net.sataras.fr:3000/{{dat.articleImage}}' class=" img-thumbnail float-left image-article rounded" alt="image artcile">
         <div class="allo-4">
           <div class="wow fadeInUp">
             <p class="titre-artcile text-uppercase"> {{dat.art_type }}</p>

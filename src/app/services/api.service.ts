@@ -37,7 +37,7 @@ export class ApiService {
   }
 
   getArticlesLimit(): Observable<Article[]> {
-    return this.http.get<Article[]>('http://localhost:3000/limit')
+    return this.http.get<Article[]>('http://api.digiandco.net.sataras.fr:3000/limit')
       .pipe(
         tap(article => console.log('fetched products')),
         catchError(this.handleError('getProducts', []))

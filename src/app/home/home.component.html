@@ -42,12 +42,32 @@
         </p>
       </div>
       <div class=" h-100 d-inline-block actus wow bounceIn"><h2 style="font-size: 1.2em;"
-                                                                class="display-2 font-weight-bold"><a class="linkRs"
-                                                                                                      href="https://www.facebook.com/Digiandco/"
-                                                                                                      target="_blank">ACTUS</a>
+                                                                class="display-2 font-weight-bold"><a class="linkRs" [routerLink]="['/articles/liste']" >ACTUS</a>
       </h2></div>
+      <div class="container text-left">
+        <a style="color: black" routerLink="/article" routerLinkActive="active">
+          <div class="row" *ngFor="let dat of data" [routerLink]="['/article/', dat._id]">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <div class="wow fadeInUp float-left">
+                <p class="titre-artcile float-left text-uppercase">{{dat.art_type }}</p>
+                <img src="./assets/img/icone/dot.png" class="img-dot float-left" alt="dot">
+                <p class="float-left font-weight-normal">{{dat.created_at  | date :'dd/MM/yy'}}</p>
+                <br>
+                <p class="text-uppercase float-left">{{dat.title }}</p>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </a>
+      <p class="wow fadeInUp h2-responsive font-weight-bold plus text-center" data-wow-delay="0.5s"><a class="plus "
+                                                                                                       routerLink="/articles/liste"
+                                                                                                       routerLinkActive="active">TOUS</a>
+      </p>
+      <div class="clear"></div>
+    </div>
       <div class="wow banniere text-center h1-responsive">
-        <div class="" typingAnimation [typeSpeed]="20" [startDelay]="1000">
+        <div class="wow" typingAnimation [typeSpeed]="20" [startDelay]="2000">
           <p>
             Vous êtes intéressés?
             On a encore mieux...
