@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
-import {NgForm} from '@angular/forms';
+import {Component, OnInit, HostListener} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ConnectionService} from '../services/connection.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-fcontact',
@@ -10,29 +11,42 @@ import {NgForm} from '@angular/forms';
 
 export class FcontactComponent implements OnInit {
   contactForm: FormGroup;
+  disabledSubmitButton = true;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.createContactForm();
+  @HostListener('input') oninput() {
+    if (this.contactForm.valid) {
+      this.disabledSubmitButton = false;
+    }
   }
 
-  onSubmit() {
-    console.log('Your form data : ', this.contactForm.value);
-  }
-
-  createContactForm() {
-    this.contactForm = this.formBuilder.group({
-      prenom: [''],
-      nom: [''],
-      mail: [''],
-      societe: [''],
-      message: ['']
-    });
+  constructor(private formBuilder: FormBuilder, private connectionService: ConnectionService, private router: Router) {
   }
 
   ngOnInit() {
-
+    this.initForm();
   }
 
+  initForm() {
+    this.contactForm = this.formBuilder.group({
+      prenom: ['', Validators.required],
+      nom: ['', Validators.required],
+      mail: ['', Validators.required],
+      societe: ['', Validators.required],
+      message: ['', Validators.required],
+    });
+  }
 
-
+  onSubmit() {
+    const formValue = this.contactForm.value;
+    return this.connectionService.sendMessage(formValue).subscribe(() => {
+      alert('Message envoyé !');
+      this.contactForm.reset();
+      this.disabledSubmitButton = true;
+      console.log(formValue);
+      this.router.navigate(['/accueil']);
+    }, error => {
+      console.log('Error', error);
+    });
+  }
 }
+

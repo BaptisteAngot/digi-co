@@ -9,26 +9,21 @@
   </div>
 </div>
 <div class="animated fadeIn">
-  <form [formGroup]="contactForm" class="formu text-center" method="post">
+  <form [formGroup]="contactForm" class="formu text-center" (ngSubmit)="onSubmit()">
     <label for="prenom"></label>
     <input type="text" id="prenom" name="prenom" placeholder="Prénom" required="required" formControlName="prenom">
     <label for="nom"></label>
     <input type="text" id="nom" name="nom" placeholder="Nom" required="required" formControlName="nom"
-           >
+    >
     <label for="mail"></label>
     <input type="mail" id="mail" name="mail" placeholder="Email" required="required" formControlName="mail"
-           >
+    >
     <label for="societe"></label>
     <input type="text" name="societe" id="societe" placeholder="Société" formControlName="societe">
     <label for="message"></label>
     <textarea id="message" name="message" cols="30" rows="10" placeholder="Vos projets, vos idées, ..."
-              formControlName="message" ></textarea>
-    <mdb-checkbox [checked]="false" [default]="true" class="rtext" required="required">En soumettant ce formulaire,
-      j'accepte que les
-      informations saisies
-      soient exploitées dans le cadre de
-      la demande de contact et de la relation commerciale qui peut en découler.
-    </mdb-checkbox>
+              formControlName="message"></textarea>
+
     <input type="submit" value="Envoyer">
   </form>
 </div>
