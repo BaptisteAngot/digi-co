@@ -32,7 +32,7 @@ const routes: Routes = [
   {path: 'partenaires/credit-mutuel', component: CreditMutuelComponent},
   {path: 'partenaires/novicks', component: NovicksComponent},
   {path: 'partenaires', component: ResumeComponent},
-  {path: '**', component: PageNotFoundComponent},
+  // {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({

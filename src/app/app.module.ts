@@ -18,7 +18,7 @@ import {AppRoutingModule, routingComponents} from './app-routing.module';
 
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {MatDialogModule} from '@angular/material/dialog';
-import {MatButtonModule, MatSortModule, MatTableModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {HeaderComponent} from './header/header.component';
@@ -28,13 +28,19 @@ import {NgwWowModule} from 'ngx-wow';
 import {WipComponent} from './wip/wip.component';
 import {FormsModule} from '@angular/forms';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
-import {HashLocationStrategy, LocationStrategy} from '@angular/common';
-import {HttpClientModule} from '@angular/common/http';
+// import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {SignupComponent} from './auth/signup/signup.component';
+import {SigninComponent} from './auth/signin/signin.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {AuthGuardService} from './services/auth-guard.service';
+import {AuthService} from './services/auth.service';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {RecaptchaModule} from 'ng-recaptcha';
 import {FormGroup, FormBuilder, Validator} from '@angular/forms';
 import {ResumeComponent} from './partenaires/resume/resume.component';
+import {ConnectionService} from './services/connection.service';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 @NgModule({
@@ -43,6 +49,8 @@ import {ResumeComponent} from './partenaires/resume/resume.component';
     FooterComponent,
     HeaderComponent,
     // TypingAnimationDirective,
+    SignupComponent,
+    SigninComponent,
     FcontactComponent,
     routingComponents,
     ResumeComponent
@@ -70,10 +78,8 @@ import {ResumeComponent} from './partenaires/resume/resume.component';
     HttpClientModule,
     NoopAnimationsModule,
     RecaptchaModule,
-    MatTableModule,
-    MatSortModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: HashLocationStrategy, useClass: LocationStrategy}, AuthService, AuthGuardService, ConnectionService],
   bootstrap: [AppComponent]
 })
 
