@@ -8,7 +8,7 @@ const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
     .set('Access-Control-Allow-Origin', '*')
 };
-const apiUrl = 'http://localhost:3000/articles';
+const apiUrl = 'http://api.digiandco.net.sataras.fr:3000/articles';
 
 @Injectable({
   providedIn: 'root'
