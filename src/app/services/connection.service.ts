@@ -6,7 +6,7 @@ import {HttpClient, HttpHeaders, HttpClientModule} from '@angular/common/http';
 })
 
 export class ConnectionService {
-  url = 'http://localhost:3000/hello';
+  url = 'http://digiandco.com/#/hello';
 
   constructor(private http: HttpClient) {
   }

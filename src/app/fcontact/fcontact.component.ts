@@ -19,30 +19,34 @@ export class FcontactComponent implements OnInit {
     }
   }
 
-  constructor(private fb: FormBuilder, private connectionService: ConnectionService, private router: Router) {
-    this.contactForm = fb.group({
+  constructor(private formBuilder: FormBuilder, private connectionService: ConnectionService, private router: Router) {
+  }
+
+  ngOnInit() {
+    this.initForm();
+  }
+
+  initForm() {
+    this.contactForm = this.formBuilder.group({
       prenom: ['', Validators.required],
       nom: ['', Validators.required],
       mail: ['', Validators.required],
       societe: ['', Validators.required],
       message: ['', Validators.required],
-      contactFormCopy: [''],
     });
-  }
-
-  ngOnInit() {
-
   }
 
   onSubmit() {
-    this.connectionService.sendMessage(this.contactForm.value).subscribe(() => {
-      alert('Your message has been sent.');
+    const formValue = this.contactForm.value;
+    return this.connectionService.sendMessage(formValue).subscribe(() => {
+      alert('Message envoyé !');
       this.contactForm.reset();
       this.disabledSubmitButton = true;
+      console.log(formValue);
+      this.router.navigate(['/accueil']);
     }, error => {
       console.log('Error', error);
     });
-    this.router.navigate(['/accueil']);
   }
-
 }
+

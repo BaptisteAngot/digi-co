@@ -40,6 +40,7 @@ import {RecaptchaModule} from 'ng-recaptcha';
 import {FormGroup, FormBuilder, Validator} from '@angular/forms';
 import {ResumeComponent} from './partenaires/resume/resume.component';
 import {ConnectionService} from './services/connection.service';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 @NgModule({
@@ -78,7 +79,7 @@ import {ConnectionService} from './services/connection.service';
     NoopAnimationsModule,
     RecaptchaModule,
   ],
-  providers: [AuthService, AuthGuardService, ConnectionService],
+  providers: [{provide: HashLocationStrategy, useClass: LocationStrategy}, AuthService, AuthGuardService, ConnectionService],
   bootstrap: [AppComponent]
 })
 
