@@ -15,6 +15,7 @@ import {NovicksComponent} from './partenaires/novicks/novicks.component';
 import {FcontactComponent} from './fcontact/fcontact.component';
 import {ResumeComponent} from './partenaires/resume/resume.component';
 import {MentiolegComponent} from './mentioleg/mentioleg.component';
+import {PumaComponent} from './partenaires/puma/puma.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'accueil', pathMatch: 'full'},
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path: 'partenaires/altitude', component: AltitudeComponent},
   {path: 'partenaires/credit-mutuel', component: CreditMutuelComponent},
   {path: 'partenaires/novicks', component: NovicksComponent},
+  {path: 'partenaires/puma', component: PumaComponent},
   {path: 'partenaires', component: ResumeComponent},
   // {path: '**', component: PageNotFoundComponent},
 ];
@@ -44,4 +46,5 @@ export class AppRoutingModule {
 
 export const routingComponents = [HomeComponent, IcontactComponent, ArticleComponent, ArticledeuxComponent,
   WipComponent, MentiolegComponent, FcrRouenComponent, RnRugbyComponent, MasselinComponent,
-  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, FcontactComponent, ResumeComponent];
+  AltitudeComponent, CreditMutuelComponent, NovicksComponent, PageNotFoundComponent, FcontactComponent, ResumeComponent,
+  PumaComponent];

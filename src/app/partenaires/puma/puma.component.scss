@@ -1,0 +1,96 @@
+@import url("https://db.onlinewebfonts.com/c/5f2f5d8473b0d45446e98b585d90d23e?family=Arial+Nova");
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../../../assets/font/Bebas/BebasNeue-Regular.eot");
+  src: url("../../../assets/font/Bebas/BebasNeue-Regular.otf") format('truetype'),
+  url("../../../assets/font/Bebas/BebasNeue-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.body {
+  height: 100%;
+}
+
+.bg {
+  background-image: url("../../../assets/img/partenaires/HEADER.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bh {
+  background-image: url("../../../assets/img/partenaires/ARTICLE2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.header {
+  font-family: BebasNeue, sans-serif;
+  font-size: 900%;
+}
+
+.titre {
+  width: 100%;
+  margin-top: 20em;
+  margin-bottom: 5em;
+  font-family: BebasNeue, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  /*background-color: crimson;*/
+}
+
+.ArtTitre {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  font-family: BebasNeue, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+.image-article {
+  width: 100%;
+}
+
+.width {
+  width: 47%;
+  margin-left: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .colo1 {
+    float: left;
+    width: 450px;
+    height: 325px;
+    font-weight: bold;
+    padding: 25px;
+  }
+  .colo2 {
+    float: right;
+    width: 450px;
+    height: 325px;
+    font-weight: bold;
+    padding: 25px;
+  }
+}
