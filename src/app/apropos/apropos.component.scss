@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../../assets/font/Bebas/BebasNeue-Regular.eot");
+  src: url("../../assets/font/Bebas/BebasNeue-Regular.otf") format('truetype'),
+  url("../../assets/font/Bebas/BebasNeue-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'OpenSans-CondLight';
+  src: url("../../assets/font/OpenSans/OpenSans-CondLight.ttf");
+}
+
+
+.contentArticle {
+  font-family: "OpenSans-CondLight", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+}
+mark {
+  background-color: rgb(124, 187, 218);
+}
+
+ul li {
+  list-style: none;
+}

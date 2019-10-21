@@ -37,6 +37,8 @@ import {FormGroup, FormBuilder, Validator} from '@angular/forms';
 import {ResumeComponent} from './partenaires/resume/resume.component';
 import {ConnectionService} from './services/connection.service';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { PumaComponent } from './partenaires/puma/puma.component';
+import { AproposComponent } from './apropos/apropos.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
     // TypingAnimationDirective,
     FcontactComponent,
     routingComponents,
-    ResumeComponent
+    ResumeComponent,
+    PumaComponent,
+    AproposComponent
   ],
   imports: [
     BrowserModule,
