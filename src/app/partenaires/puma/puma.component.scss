@@ -1,5 +1,3 @@
-@import url("https://db.onlinewebfonts.com/c/5f2f5d8473b0d45446e98b585d90d23e?family=Arial+Nova");
-
 @font-face {
   font-family: 'BebasNeue';
   src: url("../../../assets/font/Bebas/BebasNeue-Regular.eot");
@@ -8,6 +6,13 @@
   font-weight: normal;
   font-style: normal;
 
+}
+
+@font-face {
+  font-family: 'OpenSans-CondLight';
+  src: url("../../../assets/font/OpenSans/OpenSans-CondLight.ttf");
+  //font-weight: normal;
+  //font-style: normal;
 }
 
 .body {
@@ -48,7 +53,7 @@
 .ArtTitre {
   width: 100%;
   margin-top: 1em;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   font-family: BebasNeue, sans-serif;
   font-weight: bold;
   text-align: center;
@@ -71,12 +76,16 @@ h1 {
   clear: both;
 }
 
-img {
-  margin-top: 20px;
-  margin-bottom: 20px;
 
+.contentArticle {
+  font-family: "OpenSans-CondLight", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 2em;
 }
 
+mark {
+  background-color: rgb(124, 187, 218);
+}
 @media only screen and (min-width: 1280px) {
 
   .colo1 {
