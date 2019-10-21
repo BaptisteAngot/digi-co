@@ -38,6 +38,7 @@ import {ResumeComponent} from './partenaires/resume/resume.component';
 import {ConnectionService} from './services/connection.service';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { PumaComponent } from './partenaires/puma/puma.component';
+import { AproposComponent } from './apropos/apropos.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { PumaComponent } from './partenaires/puma/puma.component';
     FcontactComponent,
     routingComponents,
     ResumeComponent,
-    PumaComponent
+    PumaComponent,
+    AproposComponent
   ],
   imports: [
     BrowserModule,
