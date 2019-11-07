@@ -1,7 +1,7 @@
 {
   "cookie": {
     "header": "Cookies utilisés sur ce site web !",
-    "message": "Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site.",
+    "message": "Ce site utilise des cookies pour vous garantir la meilleure expérience.",
     "dismiss": "&Ccedil;a marche !",
     "allow": "J'accepte",
     "deny": "Refuser",

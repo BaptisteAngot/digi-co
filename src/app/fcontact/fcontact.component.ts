@@ -2,6 +2,7 @@ import {Component, OnInit, HostListener} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ConnectionService} from '../services/connection.service';
 import {Router} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-fcontact',
@@ -12,6 +13,14 @@ import {Router} from '@angular/router';
 export class FcontactComponent implements OnInit {
   contactForm: FormGroup;
   disabledSubmitButton = true;
+  endpoint: string;
+  mail: string;
+  prenom: string;
+  nom: string;
+  societe: string;
+  message: string;
+
+  http: HttpClient;
 
   @HostListener('input') oninput() {
     if (this.contactForm.valid) {
@@ -19,7 +28,9 @@ export class FcontactComponent implements OnInit {
     }
   }
 
-  constructor(private formBuilder: FormBuilder, private connectionService: ConnectionService, private router: Router) {
+  constructor(private formBuilder: FormBuilder, private connectionService: ConnectionService, private router: Router,
+              http: HttpClient) {
+    this.http = http;
   }
 
   ngOnInit() {
@@ -34,19 +45,22 @@ export class FcontactComponent implements OnInit {
       societe: ['', Validators.required],
       message: ['', Validators.required],
     });
+    this.endpoint = 'http://digiandco.com/api/contact.php';
   }
 
   onSubmit() {
-    const formValue = this.contactForm.value;
-    return this.connectionService.sendMessage(formValue).subscribe(() => {
-      alert('Message envoyé !');
-      this.contactForm.reset();
-      this.disabledSubmitButton = true;
-      console.log(formValue);
-      this.router.navigate(['/accueil']);
-    }, error => {
-      console.log('Error', error);
-    });
+    const postVars = {
+      prenom: this.prenom,
+      nom: this.nom,
+      mail: this.mail,
+      societe: this.societe,
+      message: this.message
+    };
+    this.http.post(this.endpoint, postVars)
+      .subscribe(
+        response => console.log(response),
+        response => console.log(response)
+      );
   }
 }
 

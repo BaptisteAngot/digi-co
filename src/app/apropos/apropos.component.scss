@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../../assets/font/Bebas/BebasNeue-Regular.eot");
+  src: url("../../assets/font/Bebas/BebasNeue-Regular.otf") format('truetype'),
+  url("../../assets/font/Bebas/BebasNeue-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'OpenSans-CondLight';
+  src: url("../../assets/font/OpenSans/OpenSans-CondLight.ttf");
+}
+
+.ArtTitre {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: BebasNeue, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contentArticle {
+  text-align: center;
+  width: 90%;
+  font-family: "OpenSans-CondLight", sans-serif;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+mark {
+  background-color: rgb(124, 187, 218);
+}
+
+ul li {
+  list-style: none;
+}
+
+.fakeLink {
+  color: #1a74d5;
+}
+
+.categories {
+  text-transform: uppercase;
+
+}
+
+.cateTitre {
+  background-color: rgb(124, 187, 218);
+  display: inline-block;
+  padding: 10px;
+  height: 95.2px;
+  text-align: center;
+
+}
+
