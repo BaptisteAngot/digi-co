@@ -8,7 +8,7 @@ const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
     .set('Access-Control-Allow-Origin', '*')
 };
-const apiUrl = 'http://api.digiandco.net.sataras.fr:3000/articles';
+const apiUrl = 'http://digiandco.net/articles';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +37,7 @@ export class ApiService {
   }
 
   getArticlesLimit(): Observable<Article[]> {
-    return this.http.get<Article[]>('http://api.digiandco.net.sataras.fr:3000/limit')
+    return this.http.get<Article[]>('http://digiandco.net/limit')
       .pipe(
         tap(article => console.log('fetched products')),
         catchError(this.handleError('getProducts', []))
